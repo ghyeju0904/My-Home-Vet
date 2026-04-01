@@ -1,61 +1,80 @@
-# My-Home-Vet
-trae_hackathon
+# 🐾 My Home Vet (마이 홈 벳)
 
-# React + TypeScript + Vite
+> **"반려동물과의 삶, 예방이 최고의 케어입니다."**  
+> My Home Vet은 반려동물 행동분석가, 식습관 컨설턴트, 그리고 크리에이티브 디자이너 에이전트가 협력하여 제공하는 **반려동물 맞춤 케어 자동화 서비스**입니다.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🌟 주요 기능
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1. 🔍 AI 행동 및 증상 분석 (트리아지 시스템)
+반려동물의 평소와 다른 행동이나 증상을 입력하면 AI가 가능성 높은 원인을 분석하고 대응 지침을 제공합니다.
+- **긴급도 판정**: 응급 상황 여부를 즉시 판단하여 병원 내원 필요성을 안내합니다.
+- **행동 교정 가이드**: 심리적 안정을 위한 환경 개선 및 훈련법을 제안합니다.
+- **병원 연동 준비**: 진료 시 수의사에게 전달할 증상 요약 리포트를 자동 생성합니다.
 
-## Expanding the ESLint configuration
+### 2. 🥗 생애주기 맞춤형 식습관 컨설팅
+나이, 체중, 품종, 알레르기 및 기저 질환을 고려한 최적의 식단을 추천합니다.
+- **질환별 가이드**: 신장, 피부, 비만 등 상태에 따른 급여 원칙을 제공합니다.
+- **영양 균형**: 성장기부터 노령기까지 생애주기에 맞춘 필수 영양소 배합을 제안합니다.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 3. ⏰ 식사 준비 알림 및 맞춤 레시피
+단순한 식사 시간이 아닌, **'준비 시간'**까지 계산한 스마트 알림 시스템입니다.
+- **조리 시간 계산**: (재료 준비 + 조리 + 식힘) 시간을 고려하여 식사 전 미리 알림을 보냅니다.
+- **맞춤형 레시피**: 보호자가 직접 만들 수 있는 자연식 및 간식 레시피를 전송합니다.
+- **규칙적 급여 유도**: 규칙적인 식습관 형성을 위한 데일리 리마인더를 제공합니다.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 4. 🎮 반려동물 라이프 시뮬레이션 게임
+반려동물을 맞이하기 전이나, 실제 상황에 대비하기 위한 미니 게임입니다.
+- **위기 대응 학습**: "초콜릿을 먹었을 때"와 같은 응급 상황에서의 올바른 선택을 시뮬레이션합니다.
+- **행동 이해**: 반려동물의 시그널을 올바르게 해석하는 법을 게임을 통해 배웁니다.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📸 서비스 미리보기 (MVP)
 
-export default tseslint.config({
-  extends: [
-    // other configs...
-    // Enable lint rules for React
-    reactX.configs['recommended-typescript'],
-    // Enable lint rules for React DOM
-    reactDom.configs.recommended,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
->>>>>>> 7f4cda9 (Initial commit: My Home Vet MVP)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/9f38e3e4-c5a4-4422-9204-749e795c64c7" width="80%" alt="PetHub Dashboard">
+  <p><i>반려동물 관리 및 건강 상태 요약 대시보드</i></p>
+</div>
+
+---
+
+## 🛠 기술 스택
+
+- **Frontend**: React, TypeScript, Vite, Tailwind CSS
+- **Backend**: Supabase (Auth, Database, Storage)
+- **Icons**: Lucide React
+- **UI Components**: Radix UI (Customized)
+
+---
+
+## 🚀 시작하기
+
+1. **저장소 클론**
+   ```bash
+   git clone https://github.com/ghyeju0904/My-Home-Vet.git
+   ```
+2. **의존성 설치**
+   ```bash
+   npm install
+   ```
+3. **환경 변수 설정 (`.env`)**
+   ```env
+   VITE_SUPABASE_URL=your_supabase_url
+   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
+4. **로컬 실행**
+   ```bash
+   npm run client:dev
+   ```
+
+---
+
+## ⚠️ 주의사항
+
+본 서비스의 분석 결과는 수의학적 참고용이며, **절대적인 진단을 대신할 수 없습니다.** 반려동물의 상태가 위급하거나 증상이 지속될 경우 반드시 가까운 동물병원을 방문하시기 바랍니다.
+
+---
+© 2026 My Home Vet Team. All Rights Reserved.
+
